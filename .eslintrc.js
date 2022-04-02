@@ -1,0 +1,35 @@
+module.exports = {
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  plugins: ['@typescript-eslint'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+  ],
+  rules: {
+    semi: ['error', 'never'],
+    'comma-dangle': ['error', 'never'],
+    'space-in-brackets': 0,
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+    '@typescript-eslint/no-unsafe-return': 0,
+    '@typescript-eslint/no-unsafe-assignment': 0,
+    '@typescript-eslint/no-unsafe-member-access': 0,
+    '@typescript-eslint/restrict-template-expressions': 0,
+    '@typescript-eslint/no-unsafe-call': 0,
+    '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/no-floating-promises': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
+    'jsx-a11y/aria-role': 0,
+    'no-console': 0,
+  },
+  env: {
+    browser: true,
+    es2021: true,
+  },
+}
